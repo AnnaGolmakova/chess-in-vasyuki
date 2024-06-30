@@ -1,0 +1,7 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Golos Text";
+  margin: 0;
+}

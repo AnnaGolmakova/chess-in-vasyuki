@@ -1,0 +1,12 @@
+.more-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--accent-blue);
+  border-radius: 62px;
+  border: 1px solid var(--accent-blue);
+  background: var(--white);
+  height: 35px;
+  width: 113px;
+}

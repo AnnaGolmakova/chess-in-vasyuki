@@ -1,3 +1,44 @@
 @import url(./vendor/normalize.css);
+@import url(./styles/variables.css);
 
-@import url(./vendor/fonts.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/header__logo.css);
+@import url(./blocks/header/header__title.css);
+@import url(./blocks/header/header__subtilte.css);
+
+@import url(./blocks/navigation/navigation.css);
+@import url(./blocks/navigation/navigation__button.css);
+
+@import url(./blocks/content/content.css);
+
+@import url(./blocks/about/about.css);
+@import url(./blocks/about/about__description.css);
+@import url(./blocks/about/about__accent.css);
+@import url(./blocks/about/about__image.css);
+@import url(./blocks/about/about__players.css);
+
+@import url(./blocks/table/table.css);
+@import url(./blocks/table/table__definition.css);
+@import url(./blocks/table/table__term.css);
+@import url(./blocks/table/table__comment.css);
+
+@import url(./blocks/section-header/section-header__title.css);
+@import url(./blocks/section-header/section-header__subtitle.css);
+
+@import url(./blocks/renovation/renovation__stages.css);
+@import url(./blocks/renovation/renovation__plane.css);
+
+@import url(./blocks/cards/cards.css);
+
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/card__name.css);
+@import url(./blocks/card/card__title.css);
+@import url(./blocks/card/card__image.css);
+
+@import url(./blocks/more-button/more-button.css);
+
+@import url(./blocks/strike-through/strike-through.css);
+
+@import url(./blocks/running-line/running-line.css);
+
+@import url(./blocks/footer/footer.css);

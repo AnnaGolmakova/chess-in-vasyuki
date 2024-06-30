@@ -6,131 +6,149 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Клуб четырех коней</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body class="body">
   <div class="page">
     <header class="header">
-      <img src="<%=require('./images/logo.svg')%>" class="header__logo" alt="Лого">
+      <img src="./images/logo.svg" class="header__logo" alt="клуб четырех коней">
+      <div class="header__container">
+        <h1 class="header__title"><span class="header__title-left">Превратите уездный город</span> <span
+            class="header__title-center">в столицу</span> <span class="header__title-right">земного шара</span>
+        </h1>
+        <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира
+          по шахматам</p>
+        <nav class="navigation">
+          <a href="" class="navigation__button">Поддержать шахматную мысль</a>
+          <a href="" class="navigation__button navigation__button_secondary">Подробнее о турнире</a>
+        </nav>
+      </div>
     </header>
+    <section class="running-line">
+      <ul class="running-line__content">
+        <li class="running-line__element">Дело помощи утопающим — дело рук самих утопающих!</li>
+        <li class="running-line__element">Шахматы двигают вперед не только культуру, но и экономику!</li>
+        <li class="running-line__element">Лед тронулся, господа присяжные заседатели!</li>
+        <li class="running-line__element">Дело помощи утопающим — дело рук самих утопающих!</li>
+        <li class="running-line__element">Шахматы двигают вперед не только культуру, но и экономику!</li>
+        <li class="running-line__element">Лед тронулся, господа присяжные заседатели!</li>
+      </ul>
+    </section>
     <main class="content">
-      <section class="main">
-        <div class="main__textarea">
-          <h1 class="main__title">Превратите уездный город в столицу земного шара</h1>
-          <p>Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-          <nav class="navigation">
-            <a href="" class="navigation__button">Поддержать шахматную мысль</a>
-            <a href="" class="navigation__button navigation__button_secondary">Подробнее о турнире</a>
-          </nav>
-        </div>
-      </section>
-      <section class="running-line">
-        <span>Дело помощи утопающим — дело рук самих утопающих!</span>
-        <span>Шахматы двигают вперед не только культуру, но и экономику!</span>
-        <span>Лед тронулся, господа присяжные заседатели!</span>
-      </section>
       <section class="about">
         <div class="about__lecture">
-          <p>Чтобы поддержать Международный васюкинский турнир</p>
-          <p>посетите лекцию на тему: <span>«Плодотворная дебютная
+          <p class="about__description">Чтобы поддержать Международный васюкинский турнир</p>
+          <p class="about__description">посетите лекцию на тему: <span class="about__accent">«Плодотворная дебютная
               идея»</span>
           </p>
           <div class="about__players"></div>
         </div>
         <div class="about__prices">
           <div class="about__image"></div>
-          <p>и Сеанс <span>одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</p>
-          <dl>
-            <dt>Место проведения:</dt>
-            <dd>Клуб «Картонажник»</dd>
-            <dt>Дата и время мероприятия:</dt>
-            <dd>22 июня 1927 г. в 18:00</dd>
-            <dt>Стоимость входных билетов:</dt>
-            <dd>20 коп.</dd>
-            <dt>Плата за игру:</dt>
-            <dd>50 коп.</dd>
-            <dt>Взнос на телеграммы:</dt>
-            <dd><s>100 руб.</s> 21 руб. 16 коп.</dd>
+          <p class="about__description">и Сеанс <span class="about__accent">одновременной игры в шахматы
+              на 160 досках</span> гроссмейстера
+            О. Бендера</p>
+          <dl class="table">
+            <dt class="table__term">Место проведения:</dt>
+            <dd class="table__definition">Клуб «Картонажник»</dd>
+            <dt class="table__term">Дата и время мероприятия:</dt>
+            <dd class="table__definition">22 июня 1927 г. в 18:00</dd>
+            <dt class="table__term">Стоимость входных билетов:</dt>
+            <dd class="table__definition">20 коп.</dd>
+            <dt class="table__term">Плата за игру:</dt>
+            <dd class="table__definition">50 коп.</dd>
+            <dt class="table__term">Взнос на телеграммы:</dt>
+            <dd class="table__definition"><span class="strike-through">100 руб.</span> 21 руб. 16 коп.</dd>
           </dl>
-          <p>По всем вопросам обращаться в администрацию к К. Михельсону</p>>
+          <p class="table__comment">По всем вопросам обращаться в администрацию к К. Михельсону</p>
         </div>
       </section>
       <section class="renovation">
         <div class="section-header">
           <h2 class="section-header__title">Этапы преображения Васюков</h2>
-          <p>Будущие источники обогащения васюкинцев</p>
+          <p class="section-header__subtitle">Будущие источники обогащения васюкинцев</p>
         </div>
         <div class="renovation__plane"></div>
-        <ol>
-          <li>Строительство железнодорожной магистрали Москва-Васюки</li>
-          <li>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
-          <li>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры,
+        <ol class="renovation__stages">
+          <li class="renovation__stage">Строительство железнодорожной магистрали Москва-Васюки</li>
+          <li class="renovation__stage">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
+          <li class="renovation__stage">Поднятие сельского хозяйства в радиусе на тысячу километров: производство
+            овощей, фруктов, икры,
             шоколадных конфет</li>
-          <li>Строительство дворца для турнира</li>
-          <li>Размещение гаражей для гостевого автотранспорта</li>
-          <li>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
-          <li>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы
+          <li class="renovation__stage">Строительство дворца для турнира</li>
+          <li class="renovation__stage">Размещение гаражей для гостевого автотранспорта</li>
+          <li class="renovation__stage">Постройка сверхмощной радиостанции для передачи всему миру сенсационных
+            результатов</li>
+          <li class="renovation__stage">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов
+            и дирижаблей во все концы
             света, включая Лос-Анжелос и Мельбурн</li>
         </ol>
         <div class="renovation__pagination">
-          <button aria-label="Вперед">Вперед</button>
-          <div></div>
-          <button aria-label="Назад">Назад</button>
+          <button aria-label="Назад" class="pagination-button pagination-button_back"></button>
+          <button aria-label="Вперед" class="pagination-button pagination-button_forward"></button>
         </div>
       </section>
       <section class="participants">
         <h2 class="section-header__title">Участники турнира</h2>
         <ul class="cards">
           <li class="card">
-            <img>
-            <h3>Хозе-Рауль Капабланка</h3>
-            <p>Чемпион мира по шахматам</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" class="card__image" alt="Хозе-Рауль Капабланка">
+            <h3 class="card__name">Хозе-Рауль Капабланка</h3>
+            <p class="card__title">Чемпион мира по шахматам</p>
+            <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img>
-            <h3>Эммануил Ласкер</h3>
-            <p>Чемпион мира по шахматам</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" src class="card__image" alt="Эммануил Ласкер">
+            <h3 class="card__name">Эммануил Ласкер</h3>
+            <p class="card__title">Чемпион мира по шахматам</p>
+            <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img>
-            <h3>Александр Алехин</h3>
-            <p>Чемпион мира по шахматам</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" class="card__image" alt="Александр Алехин">
+            <h3 class="card__name">Александр Алехин</h3>
+            <p class="card__title">Чемпион мира по шахматам</p>
+            <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img>
-            <h3>Арон Нимцович</h3>
-            <p>Чемпион мира по шахматам</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" class="card__image" alt="Арон Нимцович">
+            <h3 class="card__name">Арон Нимцович</h3>
+            <p class="card__title">Чемпион мира по шахматам</p>
+            <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img>
-            <h3>Рихард Рети</h3>
-            <p>Чемпион мира по шахматам</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" class="card__image" alt="Рихард Рети">
+            <h3 class="card__name">Рихард Рети</h3>
+            <p class="card__title">Чемпион мира по шахматам</p>
+            <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img>
-            <h3>Остап Бендер</h3>
-            <p>Гроссмейстер</p>
-            <button aria-label="more-button">Подробнее</button>
+            <img src="./images/avatar.png" class="card__image" alt="Остап Бендер">
+            <h3 class="card__name">Остап Бендер</h3>
+            <p class="card__title">Гроссмейстер</p>
+            <button class="more-button">Подробнее</button>
           </li>
         </ul>
         <div class="cards__pagination">
-          <button aria-label="Вперед">Вперед</button>
-          <div></div>
-          <button aria-label="Назад">Назад</button>
+          <button aria-label="Назад" class="pagination-button pagination-button_back"></button>
+          <button aria-label="Вперед" class="pagination-button pagination-button_forward"></button>
         </div>
       </section>
-      <section class="running-line">
-        <span>Дело помощи утопающим — дело рук самих утопающих!</span>
-        <span>Шахматы двигают вперед не только культуру, но и экономику!</span>
-        <span>Лед тронулся, господа присяжные заседатели!</span>
-      </section>
     </main>
+    <section class="running-line">
+      <ul class="running-line__content">
+        <li class="running-line__element">Дело помощи утопающим — дело рук самих утопающих!</li>
+        <li class="running-line__element">Шахматы двигают вперед не только культуру, но и экономику!</li>
+        <li class="running-line__element">Лед тронулся, господа присяжные заседатели!</li>
+        <li class="running-line__element">Дело помощи утопающим — дело рук самих утопающих!</li>
+        <li class="running-line__element">Шахматы двигают вперед не только культуру, но и экономику!</li>
+        <li class="running-line__element">Лед тронулся, господа присяжные заседатели!</li>
+      </ul>
+    </section>
     <footer class="footer">
       <p class="footer__liability">Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям
         сайта. С подробностями можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать

@@ -1,0 +1,7 @@
+.about__players {
+  background-image: url("../../images/chessplayers.png");
+  width: 335px;
+  height: 212px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

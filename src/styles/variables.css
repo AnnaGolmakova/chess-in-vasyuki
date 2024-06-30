@@ -1,0 +1,15 @@
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --background-page: rgba(255, 255, 255, 1);
+  --background-secondary: rgba(230, 219, 207, 1);
+
+  --text: rgba(49, 49, 49, 1);
+  --text-secondary: rgba(49, 49, 49, 0.7);
+  --accent-red: rgba(245, 73, 50, 1);
+  --accent-blue: rgba(48, 87, 162, 1);
+
+  --btn-primary: rgba(31, 31, 31, 1);
+  --btn-secondary: rgba(31, 31, 31, 1);
+  --btn-disabled: rgba(214, 214, 214, 1);
+  --btn-hover: rgba(251, 206, 81, 1);
+}

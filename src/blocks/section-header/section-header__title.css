@@ -1,0 +1,8 @@
+.section-header__title {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 39.6px;
+  color: var(--text);
+  text-transform: uppercase;
+}

@@ -1,0 +1,38 @@
+.running-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-red);
+  height: 38px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.running-line__content {
+  display: flex;
+  flex-direction: row;
+  background: var(--accent-red);
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17.6px;
+  color: var(--white);
+  text-transform: uppercase;
+  animation: marquee 20s infinite linear;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.running-line__element {
+  margin: 0 30px 0 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}

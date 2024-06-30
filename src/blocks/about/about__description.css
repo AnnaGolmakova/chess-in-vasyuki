@@ -1,0 +1,8 @@
+.about__description {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 37.8px;
+  color: var(--text);
+  text-transform: uppercase;
+}

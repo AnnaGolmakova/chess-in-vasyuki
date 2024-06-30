@@ -1,0 +1,7 @@
+.table__definition {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text);
+  margin: 0;
+}
