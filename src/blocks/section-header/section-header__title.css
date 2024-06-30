@@ -5,4 +5,5 @@
   line-height: 39.6px;
   color: var(--text);
   text-transform: uppercase;
+  padding: 0 var(--page-padding) 0 var(--page-padding);
 }
