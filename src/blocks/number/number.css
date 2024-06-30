@@ -1,0 +1,14 @@
+.number {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-family: "Golos Text";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: var(--white);
+  border-radius: 50%;
+}

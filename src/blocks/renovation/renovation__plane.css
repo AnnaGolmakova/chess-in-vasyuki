@@ -1,3 +1,10 @@
 .renovation__plane {
   background-image: url("../../images/plane.png");
+  width: 335px;
+  height: 182px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }

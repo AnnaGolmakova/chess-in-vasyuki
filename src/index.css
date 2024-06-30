@@ -25,8 +25,16 @@
 @import url(./blocks/section-header/section-header__title.css);
 @import url(./blocks/section-header/section-header__subtitle.css);
 
+@import url(./blocks/renovation/renovation.css);
+@import url(./blocks/renovation/renovation__container.css);
 @import url(./blocks/renovation/renovation__stages.css);
+@import url(./blocks/renovation/renovation__stage.css);
 @import url(./blocks/renovation/renovation__plane.css);
+@import url(./blocks/renovation/renovation__text.css);
+@import url(./blocks/renovation/renovation__pagination.css);
+
+@import url(./blocks/pagination-button/pagination-button.css);
+@import url(./blocks/pagination/pagination.css);
 
 @import url(./blocks/cards/cards.css);
 
@@ -35,9 +43,13 @@
 @import url(./blocks/card/card__title.css);
 @import url(./blocks/card/card__image.css);
 
+@import url(./blocks/number/number.css);
+
 @import url(./blocks/more-button/more-button.css);
 
 @import url(./blocks/strike-through/strike-through.css);
+
+@import url(./blocks/stages-wrapper/stages-wrapper.css);
 
 @import url(./blocks/running-line/running-line.css);
 

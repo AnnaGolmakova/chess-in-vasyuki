@@ -1,0 +1,5 @@
+.renovation__stage {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

@@ -1,7 +1,11 @@
 .renovation__stages {
+  display: flex;
+  flex-direction: row;
   font-family: "Golos Text";
   font-weight: 500;
   font-size: 18px;
   line-height: 21.6px;
   color: var(--text);
+  gap: 20px;
+  padding: 0 var(--page-padding) 0 var(--page-padding);
 }
