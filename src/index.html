@@ -43,28 +43,39 @@
       <section class="about">
         <div class="about__lecture">
           <p class="about__description">Чтобы поддержать Международный васюкинский турнир</p>
+          <div class="about__players"></div>
           <p class="about__description">посетите лекцию на тему: <span class="about__accent">«Плодотворная дебютная
               идея»</span>
           </p>
-          <div class="about__players"></div>
         </div>
         <div class="about__prices">
           <div class="about__image"></div>
           <p class="about__description">и Сеанс <span class="about__accent">одновременной игры в шахматы
               на 160 досках</span> гроссмейстера
             О. Бендера</p>
-          <dl class="table">
-            <dt class="table__term">Место проведения:</dt>
-            <dd class="table__definition">Клуб «Картонажник»</dd>
-            <dt class="table__term">Дата и время мероприятия:</dt>
-            <dd class="table__definition">22 июня 1927 г. в 18:00</dd>
-            <dt class="table__term">Стоимость входных билетов:</dt>
-            <dd class="table__definition">20 коп.</dd>
-            <dt class="table__term">Плата за игру:</dt>
-            <dd class="table__definition">50 коп.</dd>
-            <dt class="table__term">Взнос на телеграммы:</dt>
-            <dd class="table__definition"><span class="strike-through">100 руб.</span> 21 руб. 16 коп.</dd>
-          </dl>
+          <div class="table">
+            <div class="table__row">
+              <div class="table__term">Место проведения:</div>
+              <div class="table__definition">Клуб «Картонажник»</div>
+            </div>
+            <div class="table__row">
+              <div class="table__term">Дата и время мероприятия:</div>
+              <div class="table__definition">22 июня 1927 г. в 18:00</div>
+            </div>
+            <div class="table__row">
+              <div class="table__term">Стоимость входных билетов:</div>
+              <div class="table__definition">20 коп.</div>
+            </div>
+            <div class="table__row table__row_inline">
+              <div class="table__term">Плата за игру:</div>
+              <div class="table__definition">50 коп.</div>
+            </div>
+            <div class="table__row">
+              <div class="table__term">Взнос на телеграммы:</div>
+              <div class="table__definition"><span class="table__price strike-through">100 руб.</span> 21 руб. 16 коп.
+              </div>
+            </div>
+          </div>
           <p class="table__comment">По всем вопросам обращаться в администрацию к К. Михельсону</p>
         </div>
       </section>
@@ -116,6 +127,10 @@
         </div>
         <div class="pagination renovation__pagination">
           <button aria-label="Назад" class="pagination-button pagination-button_back"></button>
+          <div class="pagination__dots">
+            <div class="pagination__dot pagination__dot_active"></div>
+            <div class="pagination__dot"></div>
+          </div>
           <button aria-label="Вперед" class="pagination-button pagination-button_forward"></button>
         </div>
       </section>
@@ -161,6 +176,8 @@
         </ul>
         <div class="pagination cards__pagination">
           <button aria-label="Назад" class="pagination-button pagination-button_back"></button>
+          <div class="pagination__numbers"><span class="pagination__current">1</span>/<span
+              class="pagination__total">6</span></div>
           <button aria-label="Вперед" class="pagination-button pagination-button_forward"></button>
         </div>
       </section>

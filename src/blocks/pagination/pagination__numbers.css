@@ -1,0 +1,7 @@
+.pagination__numbers {
+  font-family: "Golos Text";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--text-tertiary);
+}

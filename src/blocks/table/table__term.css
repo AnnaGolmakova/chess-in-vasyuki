@@ -3,9 +3,4 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--text-secondary);
-  border-top: 2px solid rgba(208, 208, 208, 1);
-}
-
-.table__term:first-child {
-  border-top: none;
 }

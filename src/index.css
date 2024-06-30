@@ -16,11 +16,15 @@
 @import url(./blocks/about/about__accent.css);
 @import url(./blocks/about/about__image.css);
 @import url(./blocks/about/about__players.css);
+@import url(./blocks/about/about__lecture.css);
+@import url(./blocks/about/about__prices.css);
 
 @import url(./blocks/table/table.css);
 @import url(./blocks/table/table__definition.css);
 @import url(./blocks/table/table__term.css);
 @import url(./blocks/table/table__comment.css);
+@import url(./blocks/table/table__row.css);
+@import url(./blocks/table/table__price.css);
 
 @import url(./blocks/section-header/section-header__title.css);
 @import url(./blocks/section-header/section-header__subtitle.css);
@@ -35,8 +39,16 @@
 
 @import url(./blocks/pagination-button/pagination-button.css);
 @import url(./blocks/pagination/pagination.css);
+@import url(./blocks/pagination/pagination__dots.css);
+@import url(./blocks/pagination/pagination__dot.css);
+@import url(./blocks/pagination/pagination__numbers.css);
+@import url(./blocks/pagination/pagination__current.css);
+@import url(./blocks/pagination/pagination__total.css);
+
+@import url(./blocks/participants/participants.css);
 
 @import url(./blocks/cards/cards.css);
+@import url(./blocks/cards/cards__pagination.css);
 
 @import url(./blocks/card/card.css);
 @import url(./blocks/card/card__name.css);

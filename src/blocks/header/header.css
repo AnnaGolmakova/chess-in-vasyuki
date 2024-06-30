@@ -1,4 +1,16 @@
 .header {
-  padding: 18px 20px 0 20px;
-  background-image: url("../../images/cover.png");
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px 18px 20px;
+  background-image: url("../../images/cover-mobile.png");
+  min-height: calc(100vh - 38px);
+  gap: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    background-image: url("../../images/cover.png");
+  }
 }

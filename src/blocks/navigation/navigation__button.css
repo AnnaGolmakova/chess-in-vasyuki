@@ -13,3 +13,8 @@
   border-radius: 66px;
   text-decoration: none;
 }
+
+.navigation__button_secondary {
+  background: var(--btn-mobile);
+  color: var(--btn-primary);
+}

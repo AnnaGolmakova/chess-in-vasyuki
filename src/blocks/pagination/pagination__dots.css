@@ -1,0 +1,5 @@
+.pagination__dots {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}

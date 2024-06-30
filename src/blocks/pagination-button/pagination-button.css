@@ -1,6 +1,6 @@
 .pagination-button {
   border-radius: 50%;
-  background-color: var(--btn-primary);
+  background-color: var(--btn-secondary);
   height: 36px;
   width: 36px;
   border: none;
