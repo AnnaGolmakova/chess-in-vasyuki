@@ -1,0 +1,33 @@
+.pagination-button {
+  border-radius: 50%;
+  background-color: var(--btn-primary);
+  height: 36px;
+  width: 36px;
+  border: none;
+  position: relative;
+}
+
+.pagination-button:disabled {
+  background-color: var(--btn-disabled);
+}
+
+.pagination-button:hover {
+  background-color: var(--btn-hover);
+}
+
+.pagination-button::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pagination-button_back::after {
+  background-image: url("../../images/button-back.svg");
+}
+
+.pagination-button_forward::after {
+  background-image: url("../../images/button-forward.svg");
+}
