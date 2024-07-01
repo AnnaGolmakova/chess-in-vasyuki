@@ -7,3 +7,10 @@
   padding: 0 var(--page-padding) 0 var(--page-padding);
   margin: 12px 0 0 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .section-header__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

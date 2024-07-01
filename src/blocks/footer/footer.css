@@ -8,3 +8,9 @@
   padding: 40px 20px 60px 20px;
   background: var(--background-secondary);
 }
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 40px 72px 72px 72px;
+  }
+}

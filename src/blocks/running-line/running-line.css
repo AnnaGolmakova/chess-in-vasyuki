@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+@media only screen and (min-width: 1024px) {
+  .running-line {
+    height: 60px;
+  }
+}
+
 .running-line__content {
   display: flex;
   flex-direction: row;
@@ -21,6 +27,13 @@
   animation: marquee 20s infinite linear;
   white-space: nowrap;
   margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .running-line__content {
+    font-size: 22px;
+    line-height: 24.2px;
+  }
 }
 
 .running-line__element {

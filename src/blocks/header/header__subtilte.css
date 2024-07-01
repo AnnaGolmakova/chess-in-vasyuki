@@ -6,3 +6,10 @@
   color: rgba(49, 49, 49, 1);
   margin: 0 0 32px 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .header__subtitle {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+}

@@ -14,5 +14,8 @@
 @media only screen and (min-width: 1024px) {
   .header {
     background-image: url("../../images/cover.png");
+    padding: 26px 72px 26px 72px;
+    gap: 62px;
+    min-height: 700px;
   }
 }

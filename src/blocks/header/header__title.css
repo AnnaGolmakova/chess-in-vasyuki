@@ -18,3 +18,10 @@
     align-self: end;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 60px;
+    line-height: 66px;
+  }
+}

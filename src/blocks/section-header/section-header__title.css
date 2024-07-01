@@ -8,3 +8,10 @@
   padding: 0 var(--page-padding) 0 var(--page-padding);
   margin: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .section-header__title {
+    font-size: 54px;
+    line-height: 64.8px;
+  }
+}
