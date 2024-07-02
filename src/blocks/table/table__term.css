@@ -4,3 +4,10 @@
   line-height: 24px;
   color: var(--text-secondary);
 }
+
+@media only screen and (min-width: 1024px) {
+  .table__term {
+    border-right: 2px solid var(--delimiter);
+    padding: 16px 16px 16px 0;
+  }
+}

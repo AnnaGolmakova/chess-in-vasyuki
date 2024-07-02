@@ -1,3 +1,13 @@
 .about__prices {
   margin-top: 24px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .about__prices {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 44px min-content 32px min-content;
+    gap: 0 20px;
+  }
+}

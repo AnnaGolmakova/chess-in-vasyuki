@@ -3,3 +3,8 @@
   padding: 148px 0 0 0;
   position: relative;
 }
+
+@media only screen and (min-width: 1024px) {
+  .stages-wrapper {
+ padding: 54px 0 0 0;
+}

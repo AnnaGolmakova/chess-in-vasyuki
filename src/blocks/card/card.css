@@ -6,3 +6,10 @@
   font-family: "Golos Text";
   width: 100vw;
 }
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    width: calc((100vw / 3) - (var(--page-padding) * 2));
+    flex: none;
+  }
+}

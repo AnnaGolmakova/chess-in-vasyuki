@@ -22,6 +22,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  background-size: 100% 100%;
 }
 
 .pagination-button_back::after {
@@ -30,4 +31,11 @@
 
 .pagination-button_forward::after {
   background-image: url("../../images/button-forward.svg");
+}
+
+@media only screen and (min-width: 1024px) {
+  .pagination-button {
+    height: 44px;
+    width: 44px;
+  }
 }

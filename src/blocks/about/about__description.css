@@ -7,3 +7,19 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .about__description {
+    font-size: 36px;
+    line-height: 48.6px;
+    grid-column: 6/-1;
+  }
+
+  .about__description_prices {
+    align-self: end;
+  }
+}
+
+.about__description_inline {
+  display: inline;
+}

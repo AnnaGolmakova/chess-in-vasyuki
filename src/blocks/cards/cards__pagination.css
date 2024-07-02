@@ -2,3 +2,12 @@
   margin: 40px 0 0 0;
   gap: 14px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .cards__pagination {
+    position: absolute;
+    top: 10px;
+    right: var(--page-padding);
+    margin: 0;
+  }
+}

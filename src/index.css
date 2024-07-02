@@ -5,6 +5,7 @@
 @import url(./blocks/header/header__logo.css);
 @import url(./blocks/header/header__title.css);
 @import url(./blocks/header/header__subtilte.css);
+@import url(./blocks/header/header__container.css);
 
 @import url(./blocks/navigation/navigation.css);
 @import url(./blocks/navigation/navigation__button.css);
@@ -26,16 +27,9 @@
 @import url(./blocks/table/table__row.css);
 @import url(./blocks/table/table__price.css);
 
+@import url(./blocks/section-header/section__header.css);
 @import url(./blocks/section-header/section-header__title.css);
 @import url(./blocks/section-header/section-header__subtitle.css);
-
-@import url(./blocks/renovation/renovation.css);
-@import url(./blocks/renovation/renovation__container.css);
-@import url(./blocks/renovation/renovation__stages.css);
-@import url(./blocks/renovation/renovation__stage.css);
-@import url(./blocks/renovation/renovation__plane.css);
-@import url(./blocks/renovation/renovation__text.css);
-@import url(./blocks/renovation/renovation__pagination.css);
 
 @import url(./blocks/pagination-button/pagination-button.css);
 @import url(./blocks/pagination/pagination.css);
@@ -44,6 +38,14 @@
 @import url(./blocks/pagination/pagination__numbers.css);
 @import url(./blocks/pagination/pagination__current.css);
 @import url(./blocks/pagination/pagination__total.css);
+
+@import url(./blocks/renovation/renovation.css);
+@import url(./blocks/renovation/renovation__container.css);
+@import url(./blocks/renovation/renovation__stages.css);
+@import url(./blocks/renovation/renovation__stage.css);
+@import url(./blocks/renovation/renovation__plane.css);
+@import url(./blocks/renovation/renovation__text.css);
+@import url(./blocks/renovation/renovation__pagination.css);
 
 @import url(./blocks/participants/participants.css);
 

@@ -9,3 +9,23 @@
   padding: 62px 20px 20px 20px;
   gap: 28px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .renovation__container {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: span 4;
+    min-width: unset;
+    height: unset;
+    background-color: unset;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .renovation__container.renovation__container_span {
+    grid-column: span 8;
+  }
+  .renovation__container_double {
+    grid-row: span 2;
+  }
+}

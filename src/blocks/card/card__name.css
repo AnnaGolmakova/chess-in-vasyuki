@@ -5,3 +5,9 @@
   color: var(--text);
   margin: 28px 0 8px 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .card__name {
+    margin: 28px 0 6px 0;
+  }
+}

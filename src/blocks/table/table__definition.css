@@ -5,3 +5,9 @@
   color: var(--text);
   margin: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .table__definition {
+    padding: 16px 0 16px 16px;
+  }
+}

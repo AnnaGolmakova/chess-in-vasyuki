@@ -1,3 +1,9 @@
 .renovation__text {
   margin: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .renovation__text_shorter {
+    width: 446px;
+  }
+}

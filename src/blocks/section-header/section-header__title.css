@@ -14,4 +14,10 @@
     font-size: 54px;
     line-height: 64.8px;
   }
+
+  .section-header__title_stages {
+    display: inline;
+    max-width: 806px;
+    padding: 0;
+  }
 }

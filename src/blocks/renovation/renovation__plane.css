@@ -8,3 +8,13 @@
   top: 20px;
   right: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .renovation__plane {
+    bottom: 0;
+    right: 20px;
+    top: unset;
+    width: 400px;
+    height: 234px;
+  }
+}

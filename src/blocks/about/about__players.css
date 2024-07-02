@@ -5,3 +5,13 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+@media only screen and (min-width: 1024px) {
+  .about__players {
+    width: 394px;
+    height: 250px;
+    position: absolute;
+    right: -458px;
+    top: -10px;
+  }
+}
