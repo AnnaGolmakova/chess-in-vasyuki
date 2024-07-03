@@ -2,6 +2,7 @@
   border-radius: 50%;
   width: 244px;
   height: 244px;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 1024px) {

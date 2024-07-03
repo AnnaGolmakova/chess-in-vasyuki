@@ -1,4 +1,5 @@
 .renovation__stages {
+  overflow: scroll;
   display: flex;
   flex-direction: row;
   font-family: "Golos Text";

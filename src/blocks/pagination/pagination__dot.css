@@ -1,8 +1,11 @@
 .pagination__dot {
   background-color: var(--dot);
+  border: none;
+  flex: none;
   border-radius: 50%;
   width: 10px;
   height: 10px;
+  padding: 0;
 }
 
 .pagination__dot_active {

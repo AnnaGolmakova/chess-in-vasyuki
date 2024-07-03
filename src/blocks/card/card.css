@@ -9,7 +9,8 @@
 
 @media only screen and (min-width: 1024px) {
   .card {
-    width: calc((100vw / 3) - (var(--page-padding) * 2));
+    width: unset;
+    /* width: calc((100vw / 3) - (var(--page-padding) * 2)); */
     flex: none;
   }
 }

@@ -24,8 +24,8 @@
         <p class="header__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира
           по шахматам</p>
         <nav class="navigation">
-          <a href="" class="navigation__button">Поддержать шахматную мысль</a>
-          <a href="" class="navigation__button navigation__button_secondary">Подробнее о турнире</a>
+          <a href="#about" class="navigation__button">Поддержать шахматную мысль</a>
+          <a href="#participants" class="navigation__button navigation__button_secondary">Подробнее о турнире</a>
         </nav>
       </div>
     </header>
@@ -40,7 +40,7 @@
       </ul>
     </section>
     <main class="content">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__lecture">
           <p class="about__description about__description_inline">Чтобы поддержать Международный васюкинский турнир</p>
           <div class="about__players"></div>
@@ -81,13 +81,13 @@
           <p class="table__comment">По всем вопросам обращаться в администрацию к К. Михельсону</p>
         </div>
       </section>
-      <section class="renovation">
+      <section class="renovation carousel">
         <div class="section-header">
           <h2 class="section-header__title section-header__title_stages">Этапы преображения Васюков</h2>
           <p class="section-header__subtitle">Будущие источники обогащения васюкинцев</p>
         </div>
         <div class="stages-wrapper">
-          <div class="renovation__stages">
+          <div class="renovation__stages carousel__container">
             <div class="renovation__container renovation__container_span">
               <div class="renovation__stage ">
                 <div class="number">1</div>
@@ -131,47 +131,61 @@
         <div class="pagination renovation__pagination">
           <button aria-label="Назад" class="pagination-button pagination-button_back"></button>
           <div class="pagination__dots">
-            <div class="pagination__dot pagination__dot_active"></div>
-            <div class="pagination__dot"></div>
+            <!-- <div class="pagination__dot pagination__dot_active"></div>
+            <div class="pagination__dot"></div> -->
           </div>
+          <div class="pagination__numbers"><span class="pagination__current">1</span>/<span
+              class="pagination__total">6</span></div>
           <button aria-label="Вперед" class="pagination-button pagination-button_forward"></button>
         </div>
       </section>
-      <section class="participants">
+      <section class="participants carousel" id="participants" data-autoplay="true" data-looped="true">
         <h2 class="section-header__title">Участники турнира</h2>
-        <ul class="cards">
+        <ul class="cards carousel__container">
           <li class="card">
-            <img src="./images/avatar.png" class="card__image" alt="Хозе-Рауль Капабланка">
+            <div class="card__image">
+              <img src="./images/avatar.png" class="card__photo" alt="Хозе-Рауль Капабланка">
+            </div>
             <h3 class="card__name">Хозе-Рауль Капабланка</h3>
             <p class="card__title">Чемпион мира по шахматам</p>
             <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img src="./images/avatar.png" src class="card__image" alt="Эммануил Ласкер">
+            <div class="card__image">
+              <img src="./images/avatar.png" src class="card__photo" alt="Эммануил Ласкер">
+            </div>
             <h3 class="card__name">Эммануил Ласкер</h3>
             <p class="card__title">Чемпион мира по шахматам</p>
             <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img src="./images/avatar.png" class="card__image" alt="Александр Алехин">
+            <div class="card__image">
+              <img src="./images/avatar.png" class="card__photo" alt="Александр Алехин">
+            </div>
             <h3 class="card__name">Александр Алехин</h3>
             <p class="card__title">Чемпион мира по шахматам</p>
             <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img src="./images/avatar.png" class="card__image" alt="Арон Нимцович">
+            <div class="card__image">
+              <img src="./images/avatar.png" class="card__photo" alt="Арон Нимцович">
+            </div>
             <h3 class="card__name">Арон Нимцович</h3>
             <p class="card__title">Чемпион мира по шахматам</p>
             <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img src="./images/avatar.png" class="card__image" alt="Рихард Рети">
+            <div class="card__image">
+              <img src="./images/avatar.png" class="card__photo" alt="Рихард Рети">
+            </div>
             <h3 class="card__name">Рихард Рети</h3>
             <p class="card__title">Чемпион мира по шахматам</p>
             <button class="more-button">Подробнее</button>
           </li>
           <li class="card">
-            <img src="./images/avatar.png" class="card__image" alt="Остап Бендер">
+            <div class="card__image">
+              <img src="./images/avatar.png" class="card__photo" alt="Остап Бендер">
+            </div>
             <h3 class="card__name">Остап Бендер</h3>
             <p class="card__title">Гроссмейстер</p>
             <button class="more-button">Подробнее</button>
@@ -201,6 +215,7 @@
         стульев».</p>
     </footer>
   </div>
+  <script src="./index.js" type="module"></script>
 </body>
 
 </html>
