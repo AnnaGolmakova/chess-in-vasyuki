@@ -1,7 +1,7 @@
 .running-line {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   background: var(--accent-red);
   height: 38px;
   overflow: hidden;
@@ -24,7 +24,7 @@
   line-height: 17.6px;
   color: var(--white);
   text-transform: uppercase;
-  animation: marquee 20s infinite linear;
+  animation: marquee 28s linear infinite;
   white-space: nowrap;
   margin: 0;
 }
@@ -42,10 +42,10 @@
 
 @keyframes marquee {
   0% {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
 
   100% {
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
   }
 }

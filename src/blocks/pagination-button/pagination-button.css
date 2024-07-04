@@ -11,8 +11,9 @@
   background-color: var(--btn-disabled);
 }
 
-.pagination-button:hover {
+.pagination-button:hover:not(:disabled) {
   background-color: var(--btn-hover);
+  cursor: pointer;
 }
 
 .pagination-button::after {

@@ -1,3 +1,9 @@
 .header__container {
   max-width: 542px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .header__container {
+    max-width: 320px;
+  }
+}

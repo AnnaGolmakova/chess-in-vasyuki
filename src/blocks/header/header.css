@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 767px) {
   .header {
     background-image: url("../../images/cover.png");
     padding: 26px 72px 26px 72px;
