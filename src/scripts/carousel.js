@@ -10,7 +10,6 @@ export default class Carousel {
       currentText: element.querySelector(".pagination__current"),
       totalText: element.querySelector(".pagination__total"),
     };
-    console.log(this.elements);
 
     this.observerOptions = {
       root: element,
@@ -21,7 +20,6 @@ export default class Carousel {
     /**
      * @param {boolean} isAutoPlay Change to next slide automatically
      */
-    console.log(this.elements.root.dataset.autoplay);
     this.isAutoplay = this.elements.root.dataset.autoplay;
 
     this.autoplayTimer = null;
@@ -31,8 +29,7 @@ export default class Carousel {
      */
     this.isLooped = this.elements.root.dataset.looped;
 
-    // this.current = new Set();
-    this.current = null;
+    this.current = new Set();
 
     /**
      * @property {number} currentIndex Index of the current slide
@@ -41,19 +38,20 @@ export default class Carousel {
 
     this.total = this.elements.scroller.children.length;
 
-    this.renderDots();
-    this.updateText();
-    this.updateControls();
     this.createObserver();
     this.setAutoplay();
     this.setListeners();
+    this.renderDots();
+    this.updateText();
+    this.updateControls();
   }
 
   next() {
-    const next = this.current.nextElementSibling;
+    const next = this.getLastVisibleElement().nextElementSibling;
 
     if (next) {
       this.goToElement(this.currentIndex + 1, next);
+      this.getLastVisibleElement();
       return;
     }
 
@@ -63,7 +61,8 @@ export default class Carousel {
   }
 
   prev() {
-    const previous = this.current.previousElementSibling;
+    const previous = this.getFirstVisibleElement().previousElementSibling;
+
     if (previous) {
       this.goToElement(this.currentIndex - 1, previous);
       return;
@@ -107,8 +106,8 @@ export default class Carousel {
     const { lastElementChild: last, firstElementChild: first } =
       this.elements.scroller;
 
-    const isAtEnd = this.current === last;
-    const isAtStart = this.current === first;
+    const isAtEnd = this.getLastVisibleElement() === last;
+    const isAtStart = this.getFirstVisibleElement() === first;
 
     this.elements.next.forEach((element) => {
       element.toggleAttribute("disabled", isAtEnd);
@@ -180,12 +179,15 @@ export default class Carousel {
     this.observer = new IntersectionObserver((observations) => {
       for (let observation of observations) {
         if (observation.isIntersecting) {
-          this.current = observation.target;
+          this.current.add(observation.target);
           this.currentIndex = Array.from(
             this.elements.scroller.children
           ).indexOf(observation.target);
+        } else {
+          this.current.delete(observation.target);
         }
       }
+
       this.updateDots();
       this.updateText();
       this.updateControls();
@@ -203,5 +205,29 @@ export default class Carousel {
       clearInterval(this.autoplayTimer);
       this.isAutoplay = false;
     }
+  }
+
+  getLastVisibleElement() {
+    return [...this.current].sort((a, b) => {
+      if (a.offsetLeft > b.offsetLeft) {
+        return -1;
+      }
+      if (a.offsetLeft < b.offsetLeft) {
+        return 1;
+      }
+      return 0;
+    })[0];
+  }
+
+  getFirstVisibleElement() {
+    return [...this.current].sort((a, b) => {
+      if (a.offsetLeft > b.offsetLeft) {
+        return 1;
+      }
+      if (a.offsetLeft < b.offsetLeft) {
+        return -1;
+      }
+      return 0;
+    })[0];
   }
 }
