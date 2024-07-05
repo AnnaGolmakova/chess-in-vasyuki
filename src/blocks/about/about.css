@@ -4,3 +4,9 @@
   padding: 0 var(--page-padding) 0 var(--page-padding);
   margin: 0 0 120px 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .about {
+    margin: 0 0 164px 0;
+  }
+}

@@ -11,6 +11,8 @@
     grid-row: 3/4;
     display: grid;
     grid-template-columns: max-content auto;
+    grid-template-rows: min-content;
+    grid-auto-rows: min-content;
     margin: 0;
   }
 }
