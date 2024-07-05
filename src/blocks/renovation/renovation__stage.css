@@ -7,6 +7,9 @@
 @media only screen and (min-width: 1024px) {
   .renovation__stage {
     background-color: var(--background-secondary);
+    background-image: url("../../images/texture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-column: span 4;
     padding: 20px;
   }
